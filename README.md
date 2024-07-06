@@ -12,6 +12,11 @@ Install the dependencies using pip:
 ```bash
 pip install pandas
 ```
+# HOW TO USE
+* clone this repository
+* Change directory to the cloned repository
+* run python3 app.py
+* click on the URL http://127.0.0.1:5000
 
 ## Functions
 
@@ -101,11 +106,6 @@ HostelA,102,8,Girls
 HostelB,201,6,Boys
 HostelB,202,4,Girls
 ```
-#HOW TO USE
-* clone this repository
-* Change directory to the cloned repository
-* run python3 app.py
-* click on the URL http://127.0.0.1:5000
 
 ## Final Notes
 
