@@ -1,0 +1,11 @@
+group_id,hostel_name,room_number,members_allocated
+101,Swami Vivekanada,201,2
+102,Swami Vivekanada,201,3
+305,Katappa,405,3
+105,Katappa,405,3
+201,Dasa,708,2
+309,Dasa,708,2
+309,Unallocated,NA,1
+305,Priyadarshini,302,2
+402,Priyadarshini,302,2
+105,Sarojini,101,4

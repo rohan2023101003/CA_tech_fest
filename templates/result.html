@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allocation Result</title>
+    <link rel="stylesheet" href="/static/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <style>
+        /* General body styles */
+        body {
+            background: linear-gradient(135deg, #e9f5f8, #d0e3f0);
+            color: #333;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        /* Container styles */
+        .container {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            padding: 40px;
+            text-align: center;
+            max-width: 800px;
+            width: 100%;
+        }
+
+        /* Heading styles */
+        h1 {
+            font-size: 2.2rem;
+            margin-bottom: 30px;
+            color: #007bff;
+            font-weight: bold;
+        }
+
+        /* Table styles */
+        table {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        thead {
+            background-color: #007bff;
+            color: #ffffff;
+        }
+
+        thead th {
+            font-weight: bold;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tbody tr:hover {
+            background-color: #e1e1e1;
+        }
+
+        td {
+            padding: 15px;
+            font-size: 1rem;
+        }
+
+        /* Button styles */
+        .btn-success {
+            background-color: #28a745;
+            border-color: #28a745;
+            color: #ffffff;
+            padding: 15px 25px;
+            border-radius: 8px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .btn-success:hover {
+            background-color: #218838;
+            border-color: #1e7e34;
+            transform: scale(1.05);
+        }
+
+        .btn-success:focus, .btn-success:active {
+            box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Room Allocation Result</h1>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Group ID</th>
+                    <th>Hostel Name</th>
+                    <th>Room Number</th>
+                    <th>Members Allocated</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in results %}
+                <tr>
+                    <td>{{ row.group_id }}</td>
+                    <td>{{ row.hostel_name }}</td>
+                    <td>{{ row.room_number }}</td>
+                    <td>{{ row.members_allocated }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <a href="/download" class="btn btn-success">Download Allocation CSV</a>
+    </div>
+    <script src="/static/bootstrap/bootstrap.min.js"></script>
+</body>
+</html>
