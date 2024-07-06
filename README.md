@@ -17,6 +17,8 @@ pip install pandas
 * Change directory to the cloned repository
 * run python3 app.py
 * click on the URL http://127.0.0.1:5000 appeared on the terminal
+# DEPLOYED at render.com
+* click on https://ca-tech-fest-1.onrender.com/ to use directly
 
 ## Functions
 
