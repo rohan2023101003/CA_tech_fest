@@ -15,7 +15,7 @@ pip install pandas
 # HOW TO USE
 * clone this repository
 ```
-git clone
+git clone https://github.com/rohan2023101003/CA_tech_fest.git
 ```
 * Change directory to the cloned repository
 ```
