@@ -16,7 +16,7 @@ pip install pandas
 * clone this repository
 * Change directory to the cloned repository
 * run python3 app.py
-* click on the URL http://127.0.0.1:5000
+* click on the URL http://127.0.0.1:5000 appeared on the terminal
 
 ## Functions
 
